@@ -8,9 +8,9 @@
 **************************************
 QX
 [rewrite_local]
-^https:\/\/deliverycommonapi.peisong.meituan.com\/mp\/cabinet\/pickup\/cabinet\/getCabinetInfo url script-response-body mtwmg.js
+^https:\/\/deliverycommonapi.peisong.meituan.com\/mp\/cabinet\/pickup\/cabinet\/getCabinetInfo url script-response-body https://gh.con.sh/https://raw.githubusercontent.com/jiang778899/Demo_QY_WX/master/mtwmg.js
 Shadowrocket
-美团外卖柜开柜 = type=http-response,pattern= ^https:\/\/deliverycommonapi.peisong.meituan.com\/mp\/cabinet\/pickup\/cabinet\/getCabinetInfo,requires-body=1,max-size=0,script-path=mtwmg.js
+美团外卖柜解锁 = type=http-response,pattern= ^https:\/\/deliverycommonapi.peisong.meituan.com\/mp\/cabinet\/pickup\/cabinet\/getCabinetInfo,requires-body=1,max-size=0,script-path=https://gh.con.sh/https://raw.githubusercontent.com/jiang778899/Demo_QY_WX/master/mtwmg.js
 [mitm] 
 hostname = deliverycommonapi.peisong.meituan.com
 
