@@ -1,11 +1,9 @@
 #!name=解锁收费
 [Script]
 
-青柠海报设计 = type=http-response,pattern=^https?:\/\/.*\.qingning6\.com\/api\/(user\/getUserInfo|team\/teamInfo),requires-body=1,max-size=0,script-path=https://gh.con.sh/https://raw.githubusercontent.com/chxm1023/Rewrite/main/qnsj.js
-
 美团外卖柜开柜 = type=http-response,pattern= ^https:\/\/deliverycommonapi.peisong.meituan.com\/mp\/cabinet\/pickup\/cabinet\/getCabinetInfo,requires-body=1,max-size=0,script-path=https://gh.con.sh/https://raw.githubusercontent.com/jiang778899/Demo_QY_WX/master/mtwmg.js
 
 饿了么外卖柜开柜 = type=http-response,pattern= ^https:\/\/kr.ele.me\/webapp\/upstair\/order\/create\/check\/new,requires-body=1,max-size=0,script-path=https://gh.con.sh/https://raw.githubusercontent.com/jiang778899/Demo_QY_WX/master/elm.js
 
 [MITM]
-hostname = %APPEND% api.changecollective.com, api.wawalu.cn, *.qingning6.com, deliverycommonapi.peisong.meituan.com, kr.ele.me
+hostname = %APPEND% deliverycommonapi.peisong.meituan.com, kr.ele.me
