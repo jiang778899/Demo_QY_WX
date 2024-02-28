@@ -20,6 +20,6 @@ hostname = deliverycommonapi.peisong.meituan.com
 var body = $response.body;
 
 body = body.replace(/\"charge":1/g, '\"charge":0');
-body = body.replace(/\"chargeMT":1/g, '\"chargeMT":0');
+body = body.replace(/\"chargeMt":1/g, '\"chargeMt":0');
 
 $done({body});
