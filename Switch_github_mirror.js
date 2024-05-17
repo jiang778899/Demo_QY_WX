@@ -5,7 +5,7 @@ Loon专用
 let githubPrefix = "https://raw.githubusercontent.com/"
 let fastrawPrefix = "https://fastraw.ixnic.net/" //由FastGit群组成员 @duya1234567 提供，代号A镜像。
 let hubinceptPrefix = "https://hub.incept.pw/" // 由FastGit群组成员 @mxe365 提供，代号B镜像。
-// let kkgithubPrefix = "https://raw.kkgithub.com/" //由KGithub提供，暂时失效。
+let kkgithubPrefix = "https://gh.jiasu.in/" //由KGithub提供，暂时失效。代号c镜像
 
 //1: fastraw.ixnic.net 2.hub.incept.pw 3.raw.kkgithub.com
 let changeTo = $persistentStore.read("镜像源")
@@ -27,7 +27,7 @@ if (changeTo == "") {
     headers["host"] = "hub.incept.pw"
     url = url.replace(githubPrefix,hubinceptPrefix)
 } else if (changeTo == "C镜像") {
-    headers["host"] = "raw.kkgithub.com"
+    headers["host"] = "gh.jiasu.in"
     url = url.replace(githubPrefix,kkgithubPrefix)
 }
 
