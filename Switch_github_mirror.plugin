@@ -13,7 +13,7 @@ DOMAIN, hub.incept.pw, DIRECT
 DOMAIN, raw.kkgithub.com, DIRECT
 
 [Script]
-http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GitHub/Switch_github_mirror.js, tag = GitHub加速
+http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path = https://gh.jiasu.in/https://github.com/jiang778899/Demo_QY_WX/blob/master/Switch_github_mirror.js, tag = GitHub加速
 
 [Mitm]
 hostname = raw.githubusercontent.com
